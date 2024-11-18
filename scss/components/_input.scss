@@ -2,11 +2,13 @@
   position: relative;
 
   &__label {
-    display: block;
+    position: absolute;
+    top: 16px;
+    left: 42px;
   }
 
   &__control {
-    padding: 16px 42px;
+    padding: 8px 24px;
     width: 100%;
     border: 1px solid var(--color-secondary-dark);
     border-radius: 8px;
@@ -27,6 +29,10 @@
 
     &:focus::placeholder {
       color: var(--color-primary-dark);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
     }
   }
 }
