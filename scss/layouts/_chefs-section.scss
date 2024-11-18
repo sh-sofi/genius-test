@@ -9,6 +9,7 @@
 
     &::before,
     &::after {
+      display: none;
       position: absolute;
       bottom: 24px;
       width: 352px;
